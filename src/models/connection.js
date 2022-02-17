@@ -3,7 +3,7 @@ require('dotenv').config({
 });
 const { MongoClient } = require('mongodb');
 
-const MONGO_DB_URL = `mongodb://${process.env.HOST || 'mongodb'}:27017/Cookmaster`;
+const MONGO_DB_URL = process.env.DB_URL;
 const DB_NAME = process.env.DB_NAME;
 
 let dbConnection = null;
