@@ -9,5 +9,5 @@ module.exports = (req, res, next) => {
     }
     const { error } = taskUpdateSchema.validate({ name, description, status });
     if (error) return res.status(StatusCodes.BAD_REQUEST).json({ message: error.message })
-  next();
+    next();
 };
