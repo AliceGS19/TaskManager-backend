@@ -1,6 +1,6 @@
 const express = require('express');
-const { error } = require('./app/middlewares');
-const root = require('./app/controllers/root');
+const { error } = require('./middlewares');
+const root = require('./controllers/root');
 
 const app = express();
 

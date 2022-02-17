@@ -17,7 +17,7 @@ module.exports = async (req, res, next) => {
             task[key] = body[key];
         })
       
-        await update(task, id);
+        await update(id, task);
 
         return res.status(StatusCodes.NO_CONTENT).end();
     } catch (error) {
